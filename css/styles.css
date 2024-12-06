@@ -1,10 +1,4 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-}
-h1,
+    h1,
     h2,
     h3,
     h4,
@@ -21,9 +15,16 @@ ol {
         margin-bottom: 0;
         padding-left: 0;
         list-style: none;
+        font-style: normal;
     }
 .container {
     width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    max-width: 100%;
 }
 
 /* #region body */
@@ -33,10 +34,12 @@ body {
     color: #434455;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 ul,
@@ -50,7 +53,40 @@ button {
 
 /* #endregion */
 /* #region header */
-.nav-header {}
+header {
+    border-bottom: 1px solid #e7e9fc;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-header, .contacts {
+    display: flex;
+    align-items: center;
+}
+
+.nav-header-list {
+    display: flex;
+}
+.contacts-list {
+    display: flex;
+}
+header .logo {
+    margin-right: 76px;
+    padding: 24px 0;
+}
+header .contacts {
+    margin-right: 76px;
+    padding: 24px 0;
+}
+.nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+.contacts-list-item:not(:last-child) {
+    margin-right: 40px;
+}
+
 
 .logo {
     font-family: "Raleway", sans-serif;
@@ -66,6 +102,7 @@ button {
     color: #2E2F42;
 }
 
+
 .nav-item-link,
 .nav-item-link-active {
     font-family: "Roboto", sans-serif;
@@ -75,15 +112,10 @@ button {
 }
 
 .nav-item .nav-item-link:hover,
-.contacts-list .contacts-list-item:hover,
+.contacts-list .contacts-list-item-link:hover,
 .nav-item .nav-item-link:focus,
-.contacts-list .contacts-list-item:focus {
+.contacts-list .contacts-list-item-link:focus {
     color: #404bbf;
-}
-.page-header {
-    border-bottom: 1px solid #e7e9fc;
-    width: 1440px;
-    height: 72px;
 }
 
 /* #endregion */
@@ -95,7 +127,7 @@ button {
 
 .contacts-list {}
 
-.contacts-list-item {
+.contacts-list-item-link {
     letter-spacing: 0.02em;
     color: #434455;
 }
@@ -103,28 +135,37 @@ button {
 /* #endregion */
 
 /* #region section hero*/
-
 .hero {
     background-color: #2e2f42;
+    color: #fff;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    letter-spacing: 0.02em;
     text-align: center;
-    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .hero-button {
+    display: block;
+    border: none;
     line-height: 1.5;
     font-weight: 500;
-    font-size: 16px;
     letter-spacing: 0.04em;
+    background: #4d5ae5;
+    cursor: pointer;
     color: #ffffff;
-    background-color: #4d5ae5;
+    padding: 16px 32px;
     border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    min-width: 169px;
 }
 
 .hero-button:hover,
