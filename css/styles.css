@@ -176,19 +176,21 @@ header .contacts {
 /* #endregion */
 
 /* #region section 1*/
-.features {}
+.features {
+    padding: 120px 0;
+}
 
-.features-title {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            padding: 0;
-            border: 0;
-            clip: rect(0, 0, 0, 0);
-            clip-path: inset(50%);
-            overflow: hidden;
-            white-space: nowrap;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .features-list {
@@ -200,6 +202,7 @@ header .contacts {
 }
 
 .features-list-item {
+    width: calc((100% - 24px * 3) / 4)
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
