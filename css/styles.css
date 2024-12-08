@@ -134,7 +134,7 @@ header .contacts {
 
 /* #endregion */
 
-/* #region section hero*/
+/* #region section 1*/
 .hero {
     background-color: #2e2f42;
     color: #fff;
@@ -175,7 +175,7 @@ header .contacts {
 
 /* #endregion */
 
-/* #region section 1*/
+/* #region section 2*/
 .features {
     padding: 120px 0;
 }
@@ -218,7 +218,7 @@ header .contacts {
 
 /* #endregion */
 
-/* #region section 2*/
+/* #region section 3*/
 .team {
     background-color: #f4f4fd;
     padding: 120px 0;
@@ -266,7 +266,7 @@ header .contacts {
 
 /* #endregion */
 
-/* #region section 3*/
+/* #region section 4*/
 .portfolio {
     background-color: #FFFFFF;
     padding: 120px 0;
@@ -279,7 +279,7 @@ header .contacts {
     line-height: 1.11;
     text-align: center;
     color: #2e2f42;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -317,15 +317,24 @@ header .contacts {
 /* #region footer*/
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.logo-footer {
+    color: #f4f4fd;
 }
 
 .footer-text {
+    color: #f4f4fd;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #f4f4fd;
-}
-
-.footer .logo-style {
-    color: #f4f4fd;
 }
 
 /* #endregion */
