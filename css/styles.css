@@ -77,12 +77,7 @@ header .container {
 .contacts-list {
     display: flex;
 }
-header .logo {
-    margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-header .contacts {
+header .logo, .contacts  {
     margin-right: 76px;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -185,11 +180,34 @@ header .contacts {
 /* #region section 1*/
 .features {}
 
-.features-title {}
+.features-title {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            clip-path: inset(50%);
+            overflow: hidden;
+            white-space: nowrap;
+}
 
-.features-list {}
+.features-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+}
 
-.features-list-item {}
+.features-list-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
 
 .features-title-items {
     font-weight: 500;
