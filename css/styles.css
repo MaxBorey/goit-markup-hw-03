@@ -85,6 +85,11 @@ header .logo  {
 header .contacts {
     padding: 24px 0;
 }
+
+.nav-item-link {
+    padding: 24px 0;
+}
+
 .nav-item:not(:last-child) {
     margin-right: 40px;
 }
