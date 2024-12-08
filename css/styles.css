@@ -236,6 +236,7 @@ header .contacts {
 
 .team-list {
     display: flex;
+    gap: 24px;
 }
 
 .team-card-text-container {
@@ -244,6 +245,7 @@ header .contacts {
 
 .team-list-item {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-img {}
@@ -254,6 +256,7 @@ header .contacts {
     line-height: 1.2;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-card-text {
