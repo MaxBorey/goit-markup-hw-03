@@ -184,11 +184,13 @@ header .contacts {
 /* #region section 1*/
 .features {}
 
+.features-title 
+
 .features-list {}
 
 .features-list-item {}
 
-.features-title {
+.features-title-items {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
