@@ -269,6 +269,7 @@ header .contacts {
 /* #region section 3*/
 .portfolio {
     background-color: #FFFFFF;
+    padding: 120px 0;
 }
 
 .portfolio-title {
@@ -276,14 +277,21 @@ header .contacts {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-bottom: 72px;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
 
-.portfolio-list-item {}
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3)
+}
 
 .portfolio-list-img {}
 
@@ -291,13 +299,17 @@ header .contacts {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-text {
-    letter-spacing: 0.02em;
     color: #434455;
+}
+.portfolio-container-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 /* #endregion */
