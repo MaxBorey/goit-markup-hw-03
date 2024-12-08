@@ -79,7 +79,8 @@ header .container {
 }
 header .logo {
     margin-right: 76px;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 header .contacts {
     margin-right: 76px;
@@ -184,7 +185,7 @@ header .contacts {
 /* #region section 1*/
 .features {}
 
-.features-title 
+.features-title {}
 
 .features-list {}
 
